@@ -1,0 +1,23 @@
+       button {
+            width: 90%;
+            height: 40px;
+            //position: absolute;
+            bottom: 10px;
+            cursor: pointer;
+            background-color: white;
+            color: #004284;
+            border: 1px solid #004284;
+            font-size: 16px;
+            font-family: system-ui;
+            border-radius: 30px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button:hover {
+            border: 2px solid #004284;
+            background-color: #bbdefb;
+        }

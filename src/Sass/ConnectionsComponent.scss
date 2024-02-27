@@ -1,0 +1,96 @@
+
+.connections-main {
+    width: 94vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 30px;
+    border: 1px solid rgb(138, 138, 106);
+    background-color: rgb(94, 121, 125,0.7);
+    border-radius: 10px;
+    position: absolute;
+    @media (max-width: 768px)
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        width: 78VW;
+        margin-top: 75PX;
+        
+    }
+    .grid-child {
+        border: 1px solid #bbbbbb;
+        width: 250px;
+        height: 330px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        background-color: rgb(206, 216, 218);
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+                width: 30VW;
+                height: 25ch;
+
+            }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                    width: 20VW;
+                    height: 20VW;
+                }
+        }
+
+        .name {
+            font-family: system-ui;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .headline {
+            margin-top: -15px;
+            font-family: system-ui;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        button {
+            width: 90%;
+            height: 40px;
+            position: absolute;
+
+            bottom: 10px;
+            cursor: pointer;
+            background-color: rgb(43, 109, 171);
+            color: white;
+            border: 2px solid rgb(138, 138, 106);
+            font-size: 16px;
+            font-family: system-ui;
+            border-radius: 30px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button:hover {
+            border: 2px solid #004284;
+            background-color: #5990be;
+        }
+    }
+}

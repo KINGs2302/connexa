@@ -1,0 +1,110 @@
+.profile-card {
+    width: 90vw;
+    height: auto;
+    background-color: rgb(215, 224, 223);
+    border: 1px solid rgb(138, 138, 106);
+    margin: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    
+
+    .profile-info {
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 768px) {
+                flex-direction: column;
+            }
+    
+        .profile-image {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid #cacaca;
+                padding: 5px;
+                cursor: pointer;
+        }
+
+        .right-info {
+            margin-top: 25px;
+            margin-right: 20px;
+
+            .collage,
+            .company {
+                font-family: system-ui;
+                color: rgba(0, 0, 0, 0.9);
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 30px;
+                
+            }
+
+            .company {
+                margin-top: -15px;
+            }
+        }
+    }
+
+    .website {
+        color: #004c75 !important;
+        -webkit-link: #004c75;
+    }
+
+    .skill-label {
+        font-weight: 600;
+    }
+
+    .edit-btn {
+        position: absolute;
+        right: 20px;
+
+        .edit-click {
+            color: rgb(0, 0, 0, 0.7);
+            cursor: pointer;
+            padding: 8px;
+
+        }
+
+        .edit-click:hover {
+            background-color: rgb(221, 221, 221);
+            color: black;
+            padding: 8px;
+            border-radius: 50%;
+        }
+    }
+
+    .useName {
+        font-family: system-ui;
+        color: rgba(0, 0, 0, 0.9);
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .heading {
+        margin-top: -25px;
+        font-family: system-ui;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.9);
+        width: 350px;
+        line-height: 20px;
+
+        @media(max-width: 768px) {
+            width: 250px;
+            font-size: 14px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        z-index: -1;
+        margin-top: 10px;
+        width: 280px;
+        margin-left: 27px;
+    }
+
+    .post-status-main {
+        margin-top: 300px;
+    }
+    
+}
