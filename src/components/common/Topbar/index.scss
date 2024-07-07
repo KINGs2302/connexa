@@ -1,0 +1,149 @@
+.topbar-main{
+    width: 98.9vw;
+    display: flex;
+    height: 60px;
+    background-color: rgb(47, 61, 126);
+    align-items: center;
+    @media (max-width:768px) {
+        width: 100%;
+       position: fixed;
+       z-index: 1;
+    }
+    
+}
+
+.linkedin-Logo {
+    //width: 100px;
+    align-items: center;
+    padding: 12px 15px 15px;
+    position: relative;
+    width: 135px;
+    @media(max-width: 768px) {
+        padding: 0 5px;
+
+    }
+}
+
+.home{
+    margin: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 30px;
+    @media (max-width: 768px) {
+            position: fixed;
+            background-color: rgb(47, 61, 126) !important;
+            left: 0;
+            bottom: 0;
+            padding: 0px 10px 0px 10px;
+            margin-left: 0px;
+            margin-bottom: -1px;
+            background: white;
+            width: 95%;
+        }
+}
+
+.search{
+    margin: 50px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    :hover{
+        color: rgba(255,255,255,0.7)
+    }
+    @media (max-width: 768px) {
+       margin: 5px;
+    }
+}
+.react_icon{
+    cursor: pointer;
+}
+
+.react_icon :hover{
+    color:rgba(255,255 , 255,0.7)
+}
+.image{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:768px) {
+            position: fixed;
+            right: 0;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+.user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        //margin-left: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+        object-fit: cover;
+        //position: absolute;
+        width: 30px;
+        height: 30px;
+
+        @media (max-width:768px) {
+            position: fixed;
+            right: 0;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+
+.popup-position {
+    position: absolute;
+    right: 100px;
+    top: 65px;
+    z-index: 99;
+    @media (max-width:768px) {
+            position: fixed;
+            right: 10px;
+            z-index: 1;
+    }
+}
+
+.search-results {
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    width: 240px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+    z-index: 1;
+
+    .search-inner {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-family: system-ui;
+            font-size: 18px;
+        }
+    }
+
+    .search-inner:hover {
+        background-color: #bbbbbb;
+    }
+}
